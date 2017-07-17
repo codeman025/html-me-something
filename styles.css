@@ -2,12 +2,12 @@ p {
     background-color: yellow;
 }
 
-html {
+#html {
     background-color: #ccc;
     padding: 20px
 }
 
-header {
+.header {
     color: red;
     font-weight: bold;
 }
