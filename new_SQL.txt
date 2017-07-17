@@ -1,0 +1,25 @@
+SELECT titles FROM movies;
+SELECT title, year FROM movies ORDER BY year DESC;
+INSERT INTO directors(first, last, country) Values("Jean-Pierre Jeunet", "FRANCE")
+
+INSERT INTO directors VALUES (Jean-Pierre Jeunet, FRANCE)
+INSERT INTO movies (title, year, director_id) VALUES("Ameli", 1888, SELECT FROM directors WHERE first ="Jean
+-Pierre")
+SELECT directors_id FROM directors WHERE first = "Jean-Pierre" AND last = "Jeunet")
+DELETE FROM directors WHERE directors_id = "10"
+SELECT * FROM directors ORDER BY country 
+SELECT country FROM directors d JOIN mvoies m ON d.director_id = movies.director_id WHERE m.title="Amelle"
+SELECT title, first, last FROM directors JOIN movies ON directors.director_id=
+SELECT DISTINCT first, last FROM directors LEFT JOIN movies ON directors.director_id=movies.director_id
+GROUP BY directors.director_id
+
+
+
+
+CREATE TABLE groceries (id INTEGER PRIMARY KEY, name TEXT), quantity INTERGER);
+
+INSERT INTO groceries VALUES (1, "Bananas", 4);
+INSERT INTO groceries VALUES (2, "Dark chocolate", 2);
+SELECT * FROM groceries WHERE aisle >5 ORDER BY aisle;
+SELECT * FROM exercise_logs WHERE type IN (
+    SELECT type FROM drs_favorites WHERE reason LIKE "%cardiovascular%");

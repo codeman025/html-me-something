@@ -1,3 +1,16 @@
+p { 
+    background-color: yellow;
+}
+
+html {
+    background-color: #ccc;
+    padding: 20px
+}
+
+header {
+    color: red;
+    font-weight: bold;
+}
 width: 100%;
 max-width: 1000px;
 margin: 0 auto;
